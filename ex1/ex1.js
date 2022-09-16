@@ -1,5 +1,5 @@
 
-  //valores de hora e min
+  //valores de hora e minuto
  const hours = new Date();
  const horas = hours.getHours();
  const min = hours.getMinutes();
