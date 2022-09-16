@@ -25,12 +25,16 @@ if (horas < 12 ){
 }
 
 
+
 else if(horas < 18 ){
     msg.innerHTML = 'Boa Tarde';   
     img.style.backgroundImage = "url('imgs/sunrise.jpg')";
     img.style.color = "orange";
     img.style.boxShadow = "1px 1px 100px chocolate";
+    img.style.backgroundSize = "150%"
+    img.style.backgroundPosition = "50%"
  }
+
 
 
 else {
