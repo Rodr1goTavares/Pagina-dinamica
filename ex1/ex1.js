@@ -5,23 +5,25 @@
  const min = hours.getMinutes();
 
 
+
 //exibe horas na div 
 const hrs = document.getElementById('exibirhoras');
 hrs.innerHTML = `${horas} : ${min}`;
    
-
 
 const msg = document.getElementById('message');
 
 let img = document.getElementById('imagem');
 
 
-//Altera a imagem conforme o resultado da variavel horas
+//Altera a imagem conforme as horas
 if (horas < 12 ){
     msg.innerHTML = 'Bom dia '; 
     img.style.backgroundImage = "url('imgs/morning.jpg')";  
     img.style.color = "silver"  
     img.style.boxShadow = "1px 1px 100px white"
+    img.backgroundSize = "100%"
+    img.backgroundPosition = "50%"
 }
 
 
