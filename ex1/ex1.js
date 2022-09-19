@@ -8,22 +8,25 @@
 
 //exibe horas na div 
 const hrs = document.getElementById('exibirhoras');
-hrs.innerHTML = `${horas} : ${min}`;
+//hrs.innerHTML = `${horas} : ${min}`;
+hrs.innerHTML = `São ${horas} horas e ${min} min`
    
-
 const msg = document.getElementById('message');
 
 let img = document.getElementById('imagem');
+
 
 
 //Altera a imagem conforme as horas
 if (horas < 12 ){
     msg.innerHTML = 'Bom dia '; 
     img.style.backgroundImage = "url('imgs/morning.jpg')";  
-    img.style.color = "silver"  
+    img.style.color = "black"  
     img.style.boxShadow = "1px 1px 100px white"
     img.backgroundSize = "100%"
     img.backgroundPosition = "50%"
+    hrs.style.color = "black"
+    
 }
 
 
@@ -35,6 +38,7 @@ else if(horas < 18 ){
     img.style.boxShadow = "1px 1px 100px chocolate";
     img.style.backgroundSize = "150%"
     img.style.backgroundPosition = "50%"
+    hrs.style.color = "orange"
  }
 
 
@@ -45,7 +49,13 @@ else {
     img.style.backgroundImage = "url('imgs/night.jpg')";
     img.style.color = "silver";
     img.style.boxShadow = "1px 1px 800px black";
+    hrs.style.color = "silver"
 }
+
+
+
+
+
 
 
 
