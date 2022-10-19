@@ -19,6 +19,7 @@ let img = document.getElementById('imagem');
 
 //Altera a imagem conforme as horas
 if (horas < 12 ){
+
     msg.innerHTML = 'Bom dia '; 
     img.style.backgroundImage = "url('imgs/morning.jpg')";  
     img.style.color = "black"  
@@ -26,12 +27,9 @@ if (horas < 12 ){
     img.backgroundSize = "100%"
     img.backgroundPosition = "50%"
     hrs.style.color = "black"
-    
-}
 
+}else if(horas < 18 ){
 
-
-else if(horas < 18 ){
     msg.innerHTML = 'Boa Tarde';   
     img.style.backgroundImage = "url('imgs/sunrise.jpg')";
     img.style.color = "orange";
@@ -39,12 +37,9 @@ else if(horas < 18 ){
     img.style.backgroundSize = "150%"
     img.style.backgroundPosition = "50%"
     hrs.style.color = "orange"
- }
 
-
-
-else {
-
+ }else {
+    
     msg.innerHTML = 'Boa Noite';
     img.style.backgroundImage = "url('imgs/night.jpg')";
     img.style.color = "silver";
