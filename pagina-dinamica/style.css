@@ -1,0 +1,84 @@
+
+
+body { 
+
+    background-color: rgb(29, 32, 37);
+    font: normal 15pt arial;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+header { 
+
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 10%;
+    right: 50%;
+}
+
+
+
+#exibirhoras { 
+
+    font: arial;
+    color: rgb(255, 1, 1);
+    
+}
+
+
+
+
+section#imagem { 
+    
+    transform: translate(50%,-50%);
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    right: 50%;
+    height: 500px;
+    width: 700px;
+    border: solid 2px;
+    border-radius:50px;
+    box-shadow: 1px 1px 100px rgb(0, 0, 0);
+    
+
+    color: rgb(0, 0, 0);
+   
+
+    background-size: 100%;
+    background-position: 50%;
+      
+}
+
+
+
+
+#message { 
+
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 10%;
+    right: 50%;
+    font: italic;
+    
+    
+
+}
+
+
+
+
+
+
+footer{ 
+    transform: translate(50%,-50%);
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    color: rgb(56, 72, 77);
+    text-align: center;
+    font-style: italic;
+}
